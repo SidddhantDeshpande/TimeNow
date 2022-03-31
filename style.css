@@ -1,0 +1,15 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Mono&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn{
+    @apply bg-time-purple text-white px-4 py-4 rounded-md font-semibold shadow-xl hover:bg-hov-time-purple 
+}
+
+.input:checked~.dot {
+    transform: translateX(100%);
+    background-color: #48bb78;
+}
