@@ -4,7 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <!-- <link rel="stylesheet" href="./style.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Mono&display=swap"
+        rel="stylesheet">
+    <style>
+        body{
+            font-family: 'Inter', sans-serif;
+           
+        }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            "time-purple": "#1d1b67",
+                            "hov-time-purple": "#2926A7"
+
+
+                        },
+                    }
+                }
+            }
+    </script>
+    <style type="text/tailwindcss">
+       
+       .btn{
+    @apply  bg-[#1d1b67] text-white px-4 py-4 rounded-md font-semibold shadow-xl hover:bg-[#2926A7]
+}
+        
+      </style>
     <title>TimeNow - Automatically schedule Twitter Posts</title>
 </head>
 <body class="font-Inter">
@@ -18,7 +50,7 @@
                 </div>
                 <ul class="hidden sm:flex flex-1  items-center gap-12 text-bookmark-blue   dark:text-white">
                     <li class="cursor-pointer active-menu font-bold  "><a href="./index.html"></a> Features</li>
-                    <li class="cursor-pointer"><a href="./pricing.html ">Pricing</a></li>
+                    <li class="cursor-pointer"><a href="price.html">Pricing</a></li>
                 </ul>
 
                 <!-- mob-menu -->
@@ -41,7 +73,7 @@
             <div class="-mx-6 mobile-menu md:hidden justify-end bg-slate-50">
                 <ul class=" space-y-12 mx-12  items-end">
                     <li class="active:font-sem cursor-pointer font-bold  pt-12 "><a href="./index.html">Features</a></li>
-                    <li class="font-sem cursor-pointer   pb-12"> <a href="./pricing.html">Pricing</a> </li>
+                    <li class="font-sem cursor-pointer   pb-12"> <a href="./price.html">Pricing</a> </li>
                     
                 </ul>
                 
@@ -203,15 +235,14 @@
 
         <div>
             <div class=" my-2 font-bold text-base">Try TweetNow</div>
-            <div class="py-2 border-2 rounded-sm flex ">
-            
-                <input type="text" placeholder="Email Address" class="px-2 py-3 ">
-                <div class="pb-10">
-                    <button class="absolute  right-8 b-2 button btn ">Start Scheduling</button>
+            <div class="py-2 border-2 rounded-sm flex justify-end  ">
+        
+                <input type="text" placeholder="Email Address" class="lg:pr-56 py-3 focus:outline-none">
+                <div class="px-2">
+                    <button class="  button btn ">Start Scheduling</button>
                 </div>
-            
-            
-            </div>
+        
+        
         </div>
         
      
